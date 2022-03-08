@@ -13,15 +13,87 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
+@import "bootstrap";
 
- img.recipe-show {
+html {
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #d9d9db;
+    color: #786dd6;
+}
+
+.btn-primary {
+    background-color: #786dd6;
+    border: none;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+// stuff
+
+.recipe-card h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.recipe-card p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+// show view styles
+
+img.recipe-show {
     width: 100%;
-    height: 400px;
+    height: inherit;
     object-fit: cover;
     object-position: center center;
 }
+
+.show-hero {
+    height: 450px;
+    position: relative;
+}
+
+.show-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    background-color: rgba(125, 104, 242, 0.24);
+}
+
+.show-hero-overlay h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.show-hero-overlay p {
+    text-align: center;
+    color: white;
+}
+
+.show-hero-overlay>div {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 .recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background: whitesmoke;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -32,3 +104,5 @@
     height: 200px;
     object-fit: cover;
 }
+
+// more stuff
