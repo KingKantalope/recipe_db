@@ -45,6 +45,8 @@ gem 'cocoon'
 
 gem 'carrierwave'
 
+gem 'fog-aws'
+
 # Use Sass to process CSS
 gem "sassc-rails"
 
